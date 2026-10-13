@@ -1,0 +1,55 @@
+generated: '2026-10-13'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 1
+  other_domain: 2
+  platform: 1
+  roles:
+  - api
+  - other
+  - source
+  - website
+hosts:
+- host: api.olareg.dev
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: olareg.dev
+  role: api
+  relation: other-domain
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  - GitHubRepository
+  - ChangeLog
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: olareg.dev
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: olareg.dev
+  role: other
+  relation: other-domain
+- host: olareg.org
+  found_by:
+  - pointer
+  types:
+  - Website
+  - Documentation
+  - Authentication
+  serves: []
+  registrable_domain: olareg.org
+  role: website
+  relation: own

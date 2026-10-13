@@ -1,23 +1,73 @@
 aid: olareg
 name: olareg
-description: 'olareg is a company surfaced via the API Evangelist harvest backlog (source: market-gap:container-registries)
-  and added to the network as a stub for full-pipeline profiling.'
+description: olareg is an open-source (Apache-2.0) minimal OCI-conformant container
+  registry that runs as a container, a standalone binary, or embedded in Go unit tests,
+  storing content in the OCI Layout.
 url: https://raw.githubusercontent.com/api-evangelist/olareg/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-gap:container-registries
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-13'
 tags:
 - Company
-apis: []
+- Container Registry
+- OCI
+- Open Source
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: CLI
+  url: cli/olareg-cli.yml
+- type: ChangeLog
+  url: changelog/olareg-changelog.yml
+- type: Conformance
+  url: conformance/olareg-conformance.yml
+- type: Hosts
+  url: hosts/olareg-hosts.yml
+- type: Vendors
+  url: vendors/olareg-vendors.yml
+- type: SDKs
+  url: packages/olareg-packages.yml
+- type: Packages
+  url: packages/olareg-packages.yml
+- type: DomainSecurity
+  url: security/olareg-domain-security.yml
 - type: Website
-  url: https://olareg.dev
+  url: https://olareg.org
+- type: GitHubOrganization
+  url: https://github.com/olareg
+- type: GitHubRepository
+  url: https://github.com/olareg/olareg
+- type: Documentation
+  url: https://olareg.org/install/
+- type: Authentication
+  url: https://olareg.org/auth/
+- type: ChangeLog
+  url: https://github.com/olareg/olareg/releases
+apis: []
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: olareg implements the OCI Distribution API but neither olareg.org (openapi.json
+    404, no API reference page) nor the olareg/olareg repo publishes a machine-readable
+    contract; olareg.dev (the stub Website) did not answer and the GitHub repo homepage
+    is olareg.org.
+  evidence:
+  - url: https://olareg.org/openapi.json
+    status: 404
+  - url: https://olareg.org/api/
+    status: 404
+  - url: https://olareg.org
+    status: 200
+  checked: '2026-10-13'
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v5

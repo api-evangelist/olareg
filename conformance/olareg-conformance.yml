@@ -1,0 +1,10 @@
+generated: '2026-10-13'
+method: searched
+source: https://raw.githubusercontent.com/olareg/olareg/main/README.md
+standards:
+- id: oci-distribution-spec
+  conforms: true
+  evidence: README Key Features states "OCI Conformant, frequently leveraged as an example registry to verify feasibility of future OCI specification changes."
+- id: oci-image-layout
+  conforms: true
+  evidence: README states "Storage uses the OCI Layout".

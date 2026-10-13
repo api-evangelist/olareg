@@ -1,0 +1,13 @@
+generated: '2026-10-13'
+method: searched
+source: https://github.com/olareg/olareg/releases
+scheme: semver
+current_version: v0.2.2
+url: https://github.com/olareg/olareg/releases
+entries:
+- {version: v0.2.2, date: '2026-06-24', breaking: false, highlights: [Generate linux/riscv64 artifacts, Permissive handling of manifest media type accept header]}
+- {version: v0.2.1, date: '2026-04-19', breaking: false, highlights: [Update from go-yaml/yaml to goccy/go-yaml]}
+- {version: v0.2.0, date: '2026-04-13', breaking: false, highlights: [Go 1.25.5 fixes CVE-2025-61729 and CVE-2025-61727]}
+- {version: v0.1.2, date: '2025-02-11', breaking: false, highlights: [Go v1.23.6 fixes CVE-2025-22866, Handle blobs in an index for GC, Switch to stdlib slog]}
+- {version: v0.1.1, date: '2024-08-17', breaking: true, highlights: [Go 1.22.x CVE fixes, Release notes list a Breaking change disabling delete by default]}
+- {version: v0.1.0, date: '2024-03-24', breaking: false, highlights: [Initial release, initial read-only implementation, docker image build]}

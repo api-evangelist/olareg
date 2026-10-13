@@ -1,0 +1,22 @@
+generated: '2026-10-13'
+method: searched
+source: https://olareg.org/install/
+name: olareg
+binary: olareg
+description: olareg is a minimal OCI container registry shipped as a CLI binary and container image; commands are listed in the olareg.org CLI reference.
+docs: https://olareg.org/cli/olareg/
+repo: https://github.com/olareg/olareg
+install:
+  container: docker run -p 5000:5000 --rm ghcr.io/olareg/olareg serve --store-type mem
+  binary: curl -L https://github.com/olareg/olareg/releases/latest/download/olareg-linux-amd64 >olareg
+commands:
+- name: olareg serve
+  docs: https://olareg.org/cli/olareg/serve/
+- name: olareg hash
+  docs: https://olareg.org/cli/olareg/hash/
+- name: olareg version
+  docs: https://olareg.org/cli/olareg/version/
+- name: olareg completion
+  docs: https://olareg.org/cli/olareg/completion/
+- name: olareg help
+  docs: https://olareg.org/cli/olareg/help/

@@ -1,0 +1,6 @@
+generated: '2026-10-13'
+method: searched
+source: https://olareg.org/install/
+packages:
+- {name: ghcr.io/olareg/olareg, registry: ghcr, url: https://github.com/olareg/olareg/pkgs/container/olareg, language: container, official: true, version: v0.2.2, published: '2026-06-24'}
+- {name: github.com/olareg/olareg, registry: go, url: https://pkg.go.dev/github.com/olareg/olareg, language: go, official: true, version: v0.2.2, published: '2026-06-24'}
